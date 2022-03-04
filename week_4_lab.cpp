@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
+
 int main()
 
 {
@@ -20,8 +21,11 @@ int main()
     
      d1 = rand() % 6 + 1;
      d2 = rand() % 6 + 1;
+     p2score = d1+ d2;
+     p2points = d1 + d2;
       p1score = d1 + d2;
       p1points = 1;
+      p2points = 1;
       cout << "Player 1 first roll: " << d1 << endl;
       cout << "Player 1 second roll: "<< d2 << endl;
       cout << "Player 1 Score: " << p1score << endl;
@@ -42,23 +46,33 @@ int main()
     cout << "No Points"<< endl;
     
 }
+    
      cout << endl;
     }
     
     
     // Input
-   /* for (int i = 1; i <= 3; i++) {
-    player2 = rand() % 6 + 1;
-    total1 += player2;
-    cout << "Player 2 roll:"<< player2 << endl;
-    cout << endl;
-    }
+    for (int i = 1; i <= 3; i++) {
+    //player2 = rand() % 6 + 1;
+    //total1 += player2;
+    cout << "Player 2 first roll:"<< d1 << endl;
+    cout << " Player 2 second roll: " << d2 << endl;
+    cout << "Player 2 score: " << p2score << endl;
     
-    if (player1 % 2 == 0) {
-      cout << player1 << " is even. ";
+    if (p2score % 2 == 0) {
+      cout << p2score << " is even. ";
 }
-     if (player1 % 2 != 0) {
-     cout << player1 << " is odd.";
+     if (p2score % 2 != 0) {
+     cout << p2score << " is odd.";
+}
+     if (p2score % 2 == 0){
+     cout << "Player 2 Point: " << p2points << endl;
+}
+     if (p2score % 2 != 0){
+    cout << "No Points"<< endl;
+    
+}
+    cout << endl;
 }
     /*int player1; // default value
     int player2;
