@@ -1,0 +1,45 @@
+1.) int die1 = 0;
+    int die2 = 0; 
+
+2.)
+    srand(time(0));
+    int die1;
+    int die2;
+    int die3;
+    int add;
+    int sub;
+
+    die1 = rand() % 6 + 1;
+    die2 = rand() % 6 + 1;
+    die3 = rand() % 6 + 1;
+    add = die1 + die2 + die3;
+    sub = die1 - die2 - die3;
+
+3.) for (int i = 3; i<= 0; i++) {
+    die1 = rand() % 6 + 1;
+    cout << "Die 1: " << die1 << endl;
+    cout << i << endl;
+} 
+
+4.) int die1, die2;
+    die1 = rand() % 6 + 1;
+    die2 = rand() % 6 + 1;
+    cout << "Die 1: " << die1 << endl;
+    cout << "Die 2: " << die2 << endl;
+
+    if (die1 > die2) {
+        cout << "The largest is: " << die1 << endl;
+    }
+    if (die2 > die1) {
+        cout << "The Largest is: " << die2 << endl;
+    }
+
+    5.) int die1 ;
+        int total;
+        while (die1 => 100) {
+        total += die1;
+        die1 = rand() % 6 + 1;
+        cout << "Roll: " << die1 << endl;
+        cout << "Total: " << total << endl;
+    }
+
