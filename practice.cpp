@@ -1,22 +1,27 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <math.h>
 using namespace std;
+
+bool prime(int x) {
+    for(int i = 2; i<x; i++) {
+        if (x%i == 0)
+            return false;
+    }
+    return true;
+}
 
 int main()
 {
-    srand(time(0));
-    int die1 = 0;
-    int player1 = 0;
-    die1 = rand() % 6 + 1;
-    player1 = die1;
-    cout << "Player1: " << die1 <<endl;
-     if (die1 % 2 == 0) {
-         cout << die1 << " is even";
-     }
-     if (die1 % 2 != 0) { 
-         cout << die1 << " is odd";
-     }
+    
+
+ cout<<prime(5)<<"\n";
+ cout<<prime(10)<<"\n";
+
+ 
+
+
 
     return 0;
 }
